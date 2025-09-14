@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Support - Karnataka Tourism</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Karnataka Tourism</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="booking.html" class="active">Support</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Support / Contact Section -->
+  <section class="booking-section fade-in">
+    <h2>Get Support</h2>
+    <form class="support-form" id="supportForm">
+      <label for="name">Your Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="service">Select a Service</label>
+      <select id="service" name="service" required>
+        <option value="">-- Select --</option>
+        <option value="permit">Travel Permit</option>
+        <option value="guide">Book a Local Guide</option>
+        <option value="complaint">File a Complaint</option>
+        <option value="emergency">Emergency Support</option>
+      </select>
+
+      <label for="details">Additional Details</label>
+      <textarea id="details" name="details" rows="4" required></textarea>
+
+      <button type="submit">Submit Request</button>
+    </form>
+    <p id="statusMsg"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Karnataka Tourism | All Rights Reserved</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // Smooth reveal animations
+    const revealElements = document.querySelectorAll('.fade-in, .slide-up, .zoom-in');
+    function revealOnScroll() {
+      revealElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50) {
+          el.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+
+    // 🔹 Razorpay redirect on form submit
+    document.getElementById("supportForm").addEventListener("submit", function(e) {
+      e.preventDefault(); // stop default form action
+      document.getElementById("statusMsg").textContent = "Redirecting to Razorpay...";
+      setTimeout(() => {
+        window.location.href = "https://rzp.io/rzp/dzwmGR7Q";
+      }, 1000);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Karnataka Tourism</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Karnataka Tourism</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section class="content fade-in">
+    <h2>About Karnataka Tourism</h2>
+    <p>Karnataka is a land of ancient heritage, vibrant culture, and breathtaking landscapes.</p>
+    <p>From world-famous monuments to serene beaches and coffee plantations, Karnataka is a traveler’s paradise.</p>
+    <p>The state is home to UNESCO World Heritage Sites, royal palaces, lush forests, and majestic waterfalls.</p>
+    <p>It offers a unique blend of tradition, history, adventure, and natural beauty.</p>
+    <p>Here are some of the must-visit destinations in Karnataka:</p>
+  </section>
+
+  <!-- Places Section -->
+  <section class="places-list">
+    <h3>Top Tourist Destinations</h3>
+    <div class="places-container">
+      <!-- Hampi -->
+      <div class="place-card slide-up">
+        <img src="images/ha.jpg" alt="Hampi">
+        <div class="info">
+          <h4>Hampi</h4>
+          <p>Hampi, a UNESCO World Heritage Site, was once the capital of the Vijayanagara Empire.</p>
+          <p>It is famous for its ancient temples, stone chariots, and sprawling ruins.</p>
+          <p>Virupaksha Temple and Vittala Temple are architectural marvels here.</p>
+          <p>The boulder-strewn landscapes add to its otherworldly charm.</p>
+          <p>A paradise for history buffs and photographers alike.</p>
+        </div>
+      </div>
+
+      <!-- Mysore Palace -->
+      <div class="place-card slide-up">
+        <img src="images/mys.webp" alt="Mysore Palace">
+        <div class="info">
+          <h4>Mysore Palace</h4>
+          <p>Mysore Palace is one of the most magnificent royal palaces in India.</p>
+          <p>Built in Indo-Saracenic style, it features domes, arches, and stained glass windows.</p>
+          <p>The palace glows with thousands of lights during the Dussehra festival.</p>
+          <p>Inside, its ornate halls display paintings, jewelry, and artifacts.</p>
+          <p>It is the pride of Mysore and a cultural icon of Karnataka.</p>
+        </div>
+      </div>
+
+      <!-- Jog Falls -->
+      <div class="place-card slide-up">
+        <img src="images/j.jpg" alt="Jog Falls">
+        <div class="info">
+          <h4>Jog Falls</h4>
+          <p>Jog Falls, located in Shivamogga district, is among India’s tallest waterfalls.</p>
+          <p>It cascades in four distinct streams: Raja, Rani, Roarer, and Rocket.</p>
+          <p>During the monsoon, it transforms into a thunderous spectacle.</p>
+          <p>Surrounding viewpoints provide breathtaking views of the falls.</p>
+          <p>A must-visit for nature lovers and photography enthusiasts.</p>
+        </div>
+      </div>
+
+      <!-- Coorg -->
+      <div class="place-card slide-up">
+        <img src="images/cor.jpg" alt="Coorg">
+        <div class="info">
+          <h4>Coorg</h4>
+          <p>Coorg, also known as Kodagu, is Karnataka’s coffee capital.</p>
+          <p>It is surrounded by misty hills, lush greenery, and coffee plantations.</p>
+          <p>Abbey Falls and Raja’s Seat are popular attractions here.</p>
+          <p>The region is also famous for its unique Kodava culture and cuisine.</p>
+          <p>A peaceful getaway often called the “Scotland of India.”</p>
+        </div>
+      </div>
+
+      <!-- Gokarna -->
+      <div class="place-card slide-up">
+        <img src="images/go.jpg" alt="Gokarna">
+        <div class="info">
+          <h4>Gokarna</h4>
+          <p>Gokarna is a serene coastal town known for its pristine beaches.</p>
+          <p>Om Beach, shaped like the Om symbol, is a major attraction.</p>
+          <p>The town also has ancient temples with spiritual significance.</p>
+          <p>It’s a favorite spot for backpackers and adventure seekers.</p>
+          <p>Gokarna blends relaxation, spirituality, and natural beauty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="hero no-animate">
+  <h1>Welcome to Karnataka Tourism</h1>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Karnataka Tourism | All Rights Reserved</p>
+  </footer>
+  <script>
+  const revealElements = document.querySelectorAll('.fade-in, .slide-up, .zoom-in');
+
+  function revealOnScroll() {
+    revealElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 50) {
+        el.classList.add('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll); // ensures visible on load
+</script>
+
+
+</body>
+</html>

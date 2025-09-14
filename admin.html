@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel - Karnataka Tourism</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="admin.js" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Karnataka Tourism</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="admin.html" class="active">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Admin Dashboard -->
+  <section class="content">
+    <h2>📊 Admin Dashboard</h2>
+    <div class="dashboard">
+
+      <!-- Users Table -->
+      <div class="dashboard-card">
+        <h3>👥 Registered Users</h3>
+        <table id="usersTable" class="styled-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td colspan="2">Loading...</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Bookings Table -->
+      <div class="dashboard-card">
+        <h3>📌 Bookings</h3>
+        <table id="bookingsTable" class="styled-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Place</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td colspan="4">Loading...</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Support Table -->
+      <div class="dashboard-card">
+        <h3>💬 Support Requests</h3>
+        <table id="supportTable" class="styled-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Service</th>
+              <th>Details</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td colspan="5">Loading...</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Karnataka Tourism | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
