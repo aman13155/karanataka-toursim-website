@@ -1,6 +1,4 @@
-Based on your GitHub screenshot, this appears to be a **web-based booking and management application** built with HTML, CSS, JavaScript, and Node.js.
 
-Here is a professional README for this repository.
 
 # Web-Based Booking Management System
 
